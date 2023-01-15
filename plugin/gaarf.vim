@@ -14,14 +14,12 @@ function! CallGaarfCustom()
 	silent !clear
 	echo "Running gaarf command"
 	execute "!" . g:gaarf_command . " " . bufname("%") . " -c=" . " " . g:gaarf_macro . " --loglevel=" . g:gaarf_logging
-
 endfunction
 
 function! CallGaarfDefault()
 	silent !clear
 	echomsg "Running gaarf command"
 	execute "!" . g:gaarf_command . " " . bufname("%") . " --account=" . g:gaarf_account . " --output=console --macro.start_date=:YYYYMMDD-30 --macro.end_date=:YYYYMMDD-1" . " --loglevel=" . g:gaarf_logging
-
 endfunction
 
 function! CallGaarfBq()
@@ -31,14 +29,12 @@ function! CallGaarfBq()
 	silent !clear
 	echomsg "Running gaarf-bq command"
 	execute "!" . g:gaarfbq_command . " " . bufname("%") . " -c=" . g:gaarf_config . " --loglevel=" . g:gaarf_logging
-
 endfunction
 
 function! CallGaarfBqCustom()
 	silent !clear
 	echomsg "Running gaarf-bq command"
 	execute "!" . g:gaarfbq_command . " " . bufname("%") . " --project=" . g:gaarfbq_project . " " . g:gaarfbq_macro . " --loglevel=" . g:gaarf_logging
-
 endfunction
 
 command! Gaarf call CallGaarf()

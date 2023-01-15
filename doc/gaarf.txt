@@ -1,0 +1,17 @@
+*gaarf.txt*
+
+Author: Andrei Markin
+Repo: https://github.com/AndreyMarkinPPC/vim-gaarf
+
+USAGE                                           *gaarf-vim* *:DB*
+
+:Gaarf               Runs `gaarf` command over the provided gaarf_config
+											(specify as `g:gaarf_config` variable (`let g:gaarf_config=$HOME/path/to/gaarf_config.yaml`).
+:GaarfDefault        Runs `gaarf` over the default values provided in your `.vimrc`
+											(takes `g:gaarf_account` from there), specifies two macros
+											(`start_date` and `end_date` to form the *last 30 days*)
+											and sets up output to `console`.
+:GaarfCustom         Runs `gaarf` with a custom configuration. You can overwrite `g:gaarf_account` `g:gaarf_macro`.
+:GaarfBq           	 Runs `gaarf-bq` command over the provided gaarf_config
+										  (specify as `g:gaarf_config` variable (`let g:gaarf_config=$HOME/path/to/gaarf_config.yaml`).
+:GaarfBqCustom        Runs `gaarf-bq` with a custom configuration. You can overwrite `g:gaarfbq_project` `g:gaarfbq_macro`.
