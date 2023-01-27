@@ -3,7 +3,7 @@
 Author: Andrei Markin
 Repo: https://github.com/AndreyMarkinPPC/vim-gaarf
 
-USAGE                                           *gaarf-vim* *:DB*
+USAGE                                           *gaarf-vim* *:Gaarf*
 
 :Gaarf               Runs `gaarf` command over the provided gaarf_config
 											(specify as `g:gaarf_config` variable (`let g:gaarf_config=$HOME/path/to/gaarf_config.yaml`).
@@ -15,3 +15,4 @@ USAGE                                           *gaarf-vim* *:DB*
 :GaarfBq           	 Runs `gaarf-bq` command over the provided gaarf_config
 										  (specify as `g:gaarf_config` variable (`let g:gaarf_config=$HOME/path/to/gaarf_config.yaml`).
 :GaarfBqCustom        Runs `gaarf-bq` with a custom configuration. You can overwrite `g:gaarfbq_project` `g:gaarfbq_macro`.
+:GaarfSimulator       Runs `gaarf-simulator` command for a query in the buffer.
